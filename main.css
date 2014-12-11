@@ -2,10 +2,12 @@
 
   height:100%;
   width:100%;
+  min-width:500px;
 
 }
 
 #sidebar{
+  position:absolute;
   background-color:pink;
   float:left;
   min-width:150px;
@@ -17,7 +19,8 @@
 #display{
   background-color:grey
   margin-left:150px;
-
+  position:absolute;
+  left:160px;
   border:2px solid red;
   height:100%;
   width:100%;
@@ -30,10 +33,15 @@
 
   border-bottom:0.5px solid white;
 }
+#message_header{
+  position:absolute;
 
+
+}
 #sub{
   background-color:pink;
   width:100%;
+  min-width:500px;
   clear:right;
 
 }
@@ -41,6 +49,7 @@
 #recip{
   background-color:pink;
   width:100%;
+  min-width:500px;
   clear:right;
 
 }
@@ -48,23 +57,41 @@
 #subject{
   margin-left:20px;
   width:1000px;
+  min-width:500px;
 
 }
 
 #recipients{
   width:1000px;
+  min-width:500px;
+}
+
+#msg{
+  width:200px;
+  height:200px;
+  min-width:500px;
 }
 
 #message{
-  width:1080px;
+  position:absolute;
+  width:800px;
   height:500px;
-  min-width:300px;
-
-
+  min-width:500px;
 }
 
 
 #greeting{
+
+
+}
+
+#logo{
+  float:right;
+  position:absolute;
+  right:100px;
+  top:-17px;
+  height:10%;
+
 
 }
 
@@ -76,10 +103,14 @@
 
 .inbox_item{
   position:relative;
-  margin-left:152px;
+  top:0px;
+
   background-color:yellow;
   border-bottom: solid black 0.5px;
   font-weight:bold;
+  height:30px;
+  clear:both;
+  margin-bottom:2px;
 }
 
 .inbox_item:hover{
@@ -89,9 +120,13 @@
 
 .read_inbox_item{
   position:relative;
-  margin-left:152px;
+  top:0px;
+
   background-color:yellow;
   border-bottom: solid black 0.5px;
+  height:30px;
+  clear:both;
+  margin-bottom:2px;
 
 }
 
@@ -122,4 +157,34 @@
   float:left;
   margin-left:2px;
 
+}
+
+.reply_section{
+  position:absolute;
+
+  bottom:0px;
+  width:87%;
+  min-width:100px;
+  height:20%;
+  background-color:pink;
+  border-bottom: solid black 0.5px;
+
+}
+
+#reply_message{
+
+  height:70%;
+  width:100%;
+  min-width:100px;
+
+
+}
+
+#send_msg{
+  position:relative;
+  top:600px;
+}
+
+.input{
+  margin-bottom:10px;
 }

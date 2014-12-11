@@ -31,10 +31,13 @@ function compose(){
 function result(ajax){
 
   //alert("ajax.responseText");
-  $("display").innerHTML = "<div id='sub'> Subject: <input id='subject' name='subject' type='text'/></div>" +
+
+  $("display").innerHTML = "<div id='message_header'>"+
+                           "<div id='sub'> Subject: <input id='subject' name='subject' type='text'/></div>" +
                            "<div id='recip'> Recipients: <input id='recipients' name='recipients' type='text' placeholder='If entering multiple recipients, separate each recipient by &#39;&#59;&#39;'/></div>"+
                            "<div id='msg'><textarea id='message' name='message'></textarea></div>"+
-                           "<div id='send_msg'><input type='button' id='send' name='send' value='Send Message'/> </div>";
+                            "</div>"+
+                            "<div id='send_msg'><input type='button' id='send' name='send' value='Send Message'/> </div>";
 
                            $("send").onclick = send;
 }
@@ -85,7 +88,9 @@ function display_messages(obj){
   new Ajax.Request("display_message.php",
   {
     parameters:{message_id:msg_id},
-    onSuccess:function disp(ajax4){$("display").innerHTML = ajax4.responseText; }
+    onSuccess:function disp(ajax4){$("display").innerHTML = ajax4.responseText;
+                                    $("reply_button").onclick = reply;
+                                    }
 
 
   });
@@ -114,4 +119,16 @@ function logout(){
   });
 
 
+}
+
+function reply(){
+
+  new Ajax.Request("reply.php",
+  {
+    method:"post",
+    parameters:{message:$("reply_message").value},
+    onSuccess:sent
+  });
+
+  alert($("reply_message").value);
 }
