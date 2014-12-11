@@ -1,0 +1,77 @@
+html{
+  background-image:url("/eye_candy/footer_lodyas.png");
+  background-repeat:repeat;
+
+}
+
+h2{
+  color:white;
+  text-align:center;
+  margin-top:70px;
+}
+
+img{
+  margin-left:50%;
+}
+
+
+#enclosure{
+  background-color:red;
+  border:solid 5px white;
+  border-radius:20px;
+  align:center;
+  width:50%;
+  min-height:250px;
+  height:400px;
+  margin:auto;
+  margin-top:100px;
+
+
+}
+
+
+
+#logon{
+  width:60px;
+  margin-left:45%;
+  margin-top:30px;
+  background-color:#add8e6;
+  text-align:center;
+  border-radius:10px;
+
+}
+
+#result{
+  background-color:green;
+  border:solid 5px white;
+  border-radius:20px;
+  align:center;
+  width:50%;
+  color:yellow;
+  margin:auto;
+  padding-left:20px;
+
+}
+
+.input{
+
+  margin-left:25%;
+
+}
+
+#register{
+
+  background-color:green;
+  border:solid 5px white;
+  border-radius:10px;
+  align:center;
+  width:20%;
+  color:yellow;
+  margin:auto;
+  padding-left:20px;
+  margin-top:20px;
+  text-align:center;
+
+
+
+}

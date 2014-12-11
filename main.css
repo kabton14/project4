@@ -1,0 +1,125 @@
+#main{
+
+  height:100%;
+  width:100%;
+
+}
+
+#sidebar{
+  background-color:pink;
+  float:left;
+  min-width:150px;
+  min-height:100px;
+  height:100%;
+  border:2px solid red;
+}
+
+#display{
+  background-color:grey
+  margin-left:150px;
+
+  border:2px solid red;
+  height:100%;
+  width:100%;
+  min-width:300px;
+  min-height:100px;
+
+}
+
+.sidebar_item{
+
+  border-bottom:0.5px solid white;
+}
+
+#sub{
+  background-color:pink;
+  width:100%;
+  clear:right;
+
+}
+
+#recip{
+  background-color:pink;
+  width:100%;
+  clear:right;
+
+}
+
+#subject{
+  margin-left:20px;
+  width:1000px;
+
+}
+
+#recipients{
+  width:1000px;
+}
+
+#message{
+  width:1080px;
+  height:500px;
+  min-width:300px;
+
+
+}
+
+
+#greeting{
+
+}
+
+#logout_btn{
+
+  margin-left:50px;
+
+}
+
+.inbox_item{
+  position:relative;
+  margin-left:152px;
+  background-color:yellow;
+  border-bottom: solid black 0.5px;
+  font-weight:bold;
+}
+
+.inbox_item:hover{
+  background-color:grey;
+
+}
+
+.read_inbox_item{
+  position:relative;
+  margin-left:152px;
+  background-color:yellow;
+  border-bottom: solid black 0.5px;
+
+}
+
+.read_inbox_item:hover{
+  background-color:grey;
+
+}
+
+.email_from{
+  position:absolute;
+  left:40px;
+}
+
+.email_subject{
+  position:relative;
+  left:250px;
+
+
+}
+
+.new_icon{
+  float:left;
+  margin-left:2px;
+
+}
+
+.old_icon{
+  float:left;
+  margin-left:2px;
+
+}
