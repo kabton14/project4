@@ -34,7 +34,7 @@ function result(ajax){
 
   $("display").innerHTML = "<div id='message_header'>"+
                            "<div id='sub'> Subject: <input id='subject' name='subject' type='text'/></div>" +
-                           "<div id='recip'> Recipients: <input id='recipients' name='recipients' type='text' placeholder='If entering multiple recipients, separate each recipient by &#39;&#59;&#39;'/></div>"+
+                           "<div id='recip'> Recipients: <input id='recipients' name='recipients' type='text' placeholder='If entering multiple recipients, separate each recipient by a semi-colon&#39;&#59;&#39;'/></div>"+
                            "<div id='msg'><textarea id='message' name='message'></textarea></div>"+
                             "</div>"+
                             "<div id='send_msg'><input type='button' id='send' name='send' value='Send Message'/> </div>";
@@ -130,5 +130,5 @@ function reply(){
     onSuccess:sent
   });
 
-  alert($("reply_message").value);
+  //alert($("reply_message").value);
 }

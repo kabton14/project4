@@ -44,7 +44,7 @@ if($subject != NULL && $recipients != NULL && $message != NULL ){
 }
 
 else{
-  echo "Please enter a subject and recipient(s).".$_SESSION['subject'];
+  echo "Please enter a subject and recipient(s).";
 }
 
 }
