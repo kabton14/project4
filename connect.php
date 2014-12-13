@@ -4,7 +4,7 @@ This program is responsible for connecting to and selecting the db and starting 
 
 session_start();
 
-$db = mysql_connect("localhost","root","Mandeville:1");
+$db = mysql_connect("localhost","root","");
 mysql_select_db("cheapo");
 
 ?>
